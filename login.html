@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>User Login</h1>
-
-    <form>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br><br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" minlength="8"><br><br>
-      <button onclick="submit()">Click me</button>
-    </form>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Krystal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <style>
+      body {
+        height: 100vh;
+        position: relative;
+      }
     
-    <script src="js/login.js"></script>
-    <script src="js/mock_data.js"></script>
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+</head>
+
+<body>
+  <header class="nav">
+    <img src="images/logo_crystal_2.png" alt="" class="nav__logo">
+    <div class="nav__item">
+      <a href="index.html" class="login-btn-link"><button class="btn login-btn">Home</button></a>
+      <button class="btn user-btn"> <i class="fa fa-user"></i>Guest</button>
+    </div>
+  </header>
+
+<section class="login-container">
+
+  <div class="login">
+
+    <h1 class="login-sign" id="errorShow">Please login with your email</h1>
+    <form action="" method="GET" id="form">
+      <div class="login__email">
+        <label for="email" class="login__email-label">Email</label>
+        <input type="email" id="email" name="email" class="login__email-input">
+        <div>
+          <div class="login__password">
+            <label for="password" class="login__password-label">Password</label>
+            <input type="password" id="password" name="password" class="login__password-input">
+          </div>
+          <button type="submit" class="btn btn-log">
+            login
+          </button>
+    </form>
+        </div>
+        
+        </section>
+        
+        
+        <footer class="footer">
+          <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="#" class="nav__link"><i class="fab fa-facebook footer-nav-icon"></i></a></li>
+            <li class="footer-nav-item"><a href="#" class="nav__link"><i class="fab fa-twitter footer-nav-icon"></i></a>
+            </li>
+            <li class="footer-nav-item"><a href="#" class="nav__link"><i class="fab fa-instagram footer-nav-icon"></i></a></li>
+            <li class="footer-nav-item"><a href="#" class="nav__link"><i class="fab fa-github footer-nav-icon"></i></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            &copy; This page is developed by lin kaday aung. Most of the animations that i used in this page are
+            not my property. .Feel free to use this project for your own purposes.
+          </p>
+        </footer>
+  <script src="js/login.js"></script>
 </body>
+
 </html>
